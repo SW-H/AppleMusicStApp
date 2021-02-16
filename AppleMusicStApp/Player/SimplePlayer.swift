@@ -13,6 +13,8 @@ class SimplePlayer {
     
     
     private let player = AVPlayer()
+    // AVPlayer : 실제재생하는 플레이어
+    // AVPlayerItem : 플레이어가 재생하는 실제 객체  
 
     var currentTime: Double {
         // TODO: currentTime 구하기
