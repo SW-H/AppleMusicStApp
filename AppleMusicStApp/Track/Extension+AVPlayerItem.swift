@@ -9,6 +9,8 @@
 import AVFoundation
 import UIKit
 
+
+// AVPlayerItem를 확장
 extension AVPlayerItem {
     func convertToTrack() -> Track? {
         let metadatList = asset.metadata

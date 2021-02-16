@@ -6,6 +6,8 @@
 //  Copyright © 2020 com.joonwon. All rights reserved.
 //
 
+
+
 import UIKit
 
 class TrackCollecionViewCell: UICollectionViewCell {
@@ -13,6 +15,7 @@ class TrackCollecionViewCell: UICollectionViewCell {
     @IBOutlet weak var trackTitle: UILabel!
     @IBOutlet weak var trackArtist: UILabel!
     
+    // storyboard 에 있는 아이템에서 실제로 앱 내의 uiview collection으로 로드 될때 이 메소드가 호출됨
     override func awakeFromNib() {
         super.awakeFromNib()
         trackThumbnail.layer.cornerRadius = 4
@@ -21,6 +24,11 @@ class TrackCollecionViewCell: UICollectionViewCell {
     
     func updateUI(item: Track?) {
         // TODO: 곡정보 표시하기
+        
+        guard let track = item else {return}
+        trackThumbnail.image = track.artwork
+        trackTitle.text = track.title
+        trackArtist.text = track.artist
         
     }
 }
