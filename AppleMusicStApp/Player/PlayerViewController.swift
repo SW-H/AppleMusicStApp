@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import AVFoundation
 
-class PlayerViewController: UIViewController {
+class PlayerViewController: UIViewController { // 곡 정보 표시, 곡 재생
     
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -22,6 +22,8 @@ class PlayerViewController: UIViewController {
     @IBOutlet weak var totalDurationLabel: UILabel!
     
     //TODO: SimplePlayer 만들고 프로퍼티 추가
+    let simplePlayer = SimplePlayer.shared 
+    
     
     var timeObserver: Any?
     var isSeeking: Bool = false
