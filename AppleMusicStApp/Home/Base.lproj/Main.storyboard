@@ -89,9 +89,13 @@
                                                 <constraint firstAttribute="height" constant="200" id="TDY-r3-jvb"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qXd-wQ-IHz">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qXd-wQ-IHz">
                                             <rect key="frame" x="346" y="226.5" width="35" height="34"/>
                                             <color key="tintColor" systemColor="systemPinkColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35.5" id="9mL-iY-v8c"/>
+                                                <constraint firstAttribute="width" constant="35" id="AqE-nh-0eQ"/>
+                                            </constraints>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY NOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-5C-Csp">
@@ -100,15 +104,15 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqe-xm-20j">
-                                            <rect key="frame" x="42" y="227.5" width="290" height="33.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqe-xm-20j">
+                                            <rect key="frame" x="42" y="228" width="246" height="34"/>
                                             <string key="text">PLAY NOW 
 Today's pick is HSW's album DDDD-,let's listen</string>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aiw-kQ-Mx6">
+                                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aiw-kQ-Mx6">
                                             <rect key="frame" x="32" y="66" width="359" height="200"/>
                                             <connections>
                                                 <action selector="cardTapped:" destination="tHY-qK-kWn" eventType="touchUpInside" id="U1K-3S-mBW"/>
@@ -119,7 +123,7 @@ Today's pick is HSW's album DDDD-,let's listen</string>
                                         <constraint firstItem="mqe-xm-20j" firstAttribute="leading" secondItem="SVS-rK-nqQ" secondAttribute="leading" constant="10" id="2TK-y7-DZG"/>
                                         <constraint firstItem="mqe-xm-20j" firstAttribute="bottom" secondItem="SVS-rK-nqQ" secondAttribute="bottom" constant="-5" id="7VQ-mQ-Ge8"/>
                                         <constraint firstItem="Aiw-kQ-Mx6" firstAttribute="trailing" secondItem="SVS-rK-nqQ" secondAttribute="trailing" id="9de-YI-UBg"/>
-                                        <constraint firstItem="qXd-wQ-IHz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mqe-xm-20j" secondAttribute="trailing" constant="15" id="Bna-O0-dfa"/>
+                                        <constraint firstItem="qXd-wQ-IHz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mqe-xm-20j" secondAttribute="trailing" constant="3" id="Bna-O0-dfa"/>
                                         <constraint firstItem="Aiw-kQ-Mx6" firstAttribute="bottom" secondItem="SVS-rK-nqQ" secondAttribute="bottom" id="DSO-BI-JAe"/>
                                         <constraint firstItem="qXd-wQ-IHz" firstAttribute="trailing" secondItem="SVS-rK-nqQ" secondAttribute="trailing" constant="-10" id="Dmg-EG-umu"/>
                                         <constraint firstItem="ZCt-BJ-b7E" firstAttribute="top" secondItem="tHY-qK-kWn" secondAttribute="top" constant="30" id="HJ2-Oi-zVr"/>
@@ -156,7 +160,7 @@ Today's pick is HSW's album DDDD-,let's listen</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4399" y="-20217"/>
+            <point key="canvasLocation" x="-4404.347826086957" y="-20450.223214285714"/>
         </scene>
     </scenes>
     <resources>

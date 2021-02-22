@@ -13,8 +13,8 @@ public enum DefaultStyle {
         public static let tint: UIColor = {
             if #available(iOS 13.0, *) {
                 return UIColor { traitCollction in
-                    if traitCollction.userInterfaceStyle == .dark {
-                        return .white
+                    if traitCollction.userInterfaceStyle == .dark { // 다크모드 여부 확인
+                        return .white // 색 지정
                     } else {
                         return .black
                     }
