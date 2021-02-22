@@ -65,8 +65,6 @@ extension HomeViewController: UICollectionViewDataSource {
                 playerVC.simplePlayer.replaceCurrentItem(with: item) //player view controller에 정보 넘기기
                 self.present(playerVC,animated:true,completion:nil) //창 띄우기
             }
-            
-            
             return header
         default:
             return UICollectionReusableView()
